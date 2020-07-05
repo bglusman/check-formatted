@@ -1,0 +1,16 @@
+{
+  "name": "gh-action-mix-check-formatted",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "dependencies": {
+    "@actions/core": "1.2.4",
+    "@actions/github": "3.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.3"
+  }
+}

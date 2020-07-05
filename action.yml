@@ -1,0 +1,13 @@
+name:        'mix format --check-formatted on changed files'
+description: 'Test that all files touched on this branch pass mix format --check-formatted.'
+author:      'Brian Glusman <brian@glusman.me>'
+runs:
+  using: 'node12'
+  main:  'dist/index.js'
+inputs:
+  token:
+    description: GitHub Personal Access Token
+    required:    true
+branding:
+  icon:  'search'
+  color: 'gray-dark'
