@@ -295,7 +295,7 @@ const context = github.context;
 const repo    = context.payload.repository;
 const owner   = repo.owner;
 
-const FILES          = new Set();
+const FILES   = new Set();
 
 const gh   = github.getOctokit(core.getInput('token'));
 const args = { owner: owner.name || owner.login, repo: repo.name };
@@ -368,7 +368,7 @@ async function checkFormatting() {
 	process.exitCode = 0
 	var dir;
 
-	forEach(FILES.values(), filename => {
+	FILES.values().forEach(filename => {
 		dir = exec(`mix format --check-formatted ${filename}`, function(err) {
 			if (err) {
 				process.exitCode = 1

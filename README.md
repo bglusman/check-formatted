@@ -4,7 +4,7 @@ The default `MIX_ENV` is `"dev"`, so override it as needed.
 
 ## Usage
 
-An example workflow to run`mix format --check-formatted` is as follows:
+An example workflow to run `mix format --check-formatted` is as follows:
 
 ```hcl
 workflow "Formatting" {
