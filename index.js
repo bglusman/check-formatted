@@ -80,7 +80,7 @@ async function checkFormatting() {
 	process.exitCode = 0
 	var dir;
 
-	FILES.values().forEach(filename => {
+	Array.from(FILES.values()).forEach(filename => {
 		dir = exec(`mix format --check-formatted ${filename}`, function(err) {
 			if (err) {
 				process.exitCode = 1
