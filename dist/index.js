@@ -290,6 +290,7 @@ module.exports = require("os");
 const fs     = __webpack_require__(747);
 const github = __webpack_require__(469);
 const core   = __webpack_require__(470);
+const { exec } = __webpack_require__(129);
 
 const context = github.context;
 const repo    = context.payload.repository;
