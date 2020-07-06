@@ -86,7 +86,6 @@ async function checkFormatting() {
 			if (err) {
 				process.exitCode = 1
 			}
-			console.log(stdout);
 		});
 		
 		dir.on('exit', function (code) {
