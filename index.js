@@ -2,6 +2,7 @@
 const fs     = require('fs');
 const github = require('@actions/github');
 const core   = require('@actions/core');
+const { exec } = require("child_process");
 
 const context = github.context;
 const repo    = context.payload.repository;
